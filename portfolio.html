@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venuvanka vamshi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+     crossorigin="anonymous">
+     <style>
+     /* Your existing CSS styles */
+/* Set border-radius to 50% for elements with class 'brs' */
+brs {
+  border-radius: 50%;
+}
+
+/* Set background-color to rgb(152, 105, 42) for elements with class 'bgc' */
+.bgc {
+  background-color: rgb(152, 105, 42);
+}
+
+/* Set border-radius to 50% for elements with class 'img-f' */
+.img-f {
+  border-radius: 50%;
+}
+
+/* Set text alignment to center for the element with id 'experience' */
+#experience {
+  text-align: center;
+}
+
+/* Set up flexbox layout for the container with class 'article-container' */
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Set flex properties for articles inside '.article-container' */
+.article-container article {
+  flex: 0 0 calc(25% - 20px); /* Use flex-grow, flex-shrink, and flex-basis */
+  margin: 10px; /* Set margin around articles */
+  text-align: left; /* Set text alignment to left */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+}
+
+/* Set margin and size for icon images inside articles */
+.article-container article img.icon {
+  margin-right: 10px; /* Move checkmark icon to the left */
+  width: 16px; /* Set smaller icon size */
+  height: 16px;
+}
+
+/* Set margin-top to 0 for h3 elements inside articles */
+.article-container h3 {
+  margin-top: 0;
+}
+
+/* Set text alignment and padding for skill headings */
+.skill-headings {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Set up flexbox layout for skill items */
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set flex properties for skill items */
+.skill-item {
+  flex: 1 30px; /* Use flex-grow, flex-shrink, and flex-basis */
+  text-align: left; /* Set text alignment to left */
+  margin: 5% 0; /* Set margin around skill items */
+}
+
+/* Set up flexbox layout to center the first line of skills */
+.about-containers {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">vamshi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link active"  href="about">about</a>
+              </li>
+            
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="#Skills"> Skills </a>
+               
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="#Projects"> Projects </a>
+               
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#Awards&Certificates">Awards&Certificates</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#Contact Me">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </nav>
+      <section id="about" class="section">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="vamshi1.jpg" class="d-block mx-lg-auto img-fluid brs" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="display-5 fw text-body-emphasis lh-1 mb-3">Hello</h3>
+              <h4 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I'm Venuvanka Vamshi</h4>
+              <p class="lead">
+                Welcome to my portfolio! I am an aspiring Data Analyst with a passion for uncovering actionable insights from data. Armed with proficiency in Excel, PowerBI, SQL, and Python, I possess the analytical prowess to transform raw data into valuable information.<br>
+                My journey into the realm of data analysis began with a Bachelor's degree in Computer Science, where I discovered my innate aptitude for this field.<br>
+                I've successfully completed numerous projects, a selection of which I have thoughtfully curated in the portfolio section below.These projects serve as tangible evidence of my data-driven skills and the value I can bring to your organization.<br>
+                Join me on this journey as we explore the world of data analysis, where each data point is a potential insight waiting to be discovered and harnessed.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                  <a href="VenuvankaVamshiResume (3).pdf" target="_blank" rel="noopener noreferrer">
+                    <span style="color: rgb(11, 11, 11);">Resume</span>
+                  </a>
+                </button>
+                <div id="socials-container" class="d-flex align-items-center">
+                  <img src=".\linkedin.png" alt="My LinkedIn profile" class="icon me-2" onclick="location.href='https://www.linkedin.com/in/vamshi-venuvanka-b21aa2202/'" style="width: 32px; height: 32px;">
+                  <img src=".\github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/vamshi12vamshi'" style="width: 32px; height: 32px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+          </div>
+        </div>
+      </div>
+    </section>
+      <section id="Skills" class="section">
+        <h1 class="title"><b><h1>Skills</b></h1> <div class="experience-details-container">
+          <br>
+          
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Python (Functions)</h3>
+                    </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Python Libraries</h3>
+                    </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Power BI</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>SQL</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>MS Excel</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Communication</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Problem Solving</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>GIT</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Machine Learning (Basic)</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        #experience {
+          text-align: center; /* Center the heading */
+        }
+      
+        .article-container {
+          display: flex; /* Arrange articles horizontally */
+          flex-wrap: wrap; /* Allow wrapping to multiple lines */
+          justify-content: center; /* Center articles horizontally */
+          /* Adjust gap as needed for spacing between skills */
+          gap: 5%;
+        }
+      
+        .article {
+          /* Adjust width as needed for individual skills */
+          width: 0px;
+          text-align: center; /* Center content within each skill */
+        }
+        .title {
+          margin-top: 5%; /* Remove any default margin-top */
+        }
+      </style>
+      
+      <section id="Projects" class="section">  
+        <h1 class="title"><b><h1>Projects</b></h1> <div class="experience-details-container">
+       <!-- <h1 class="title">Projects</h1> -->
+      <br>
+    
+      
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="project-cards">
+      
+              <div class="details-container color-container">
+                <div class="project-box">
+                  <img src="./nyc taxi trip.png" alt="Project 1" class="project-img">
+                  <div class="project-info">
+                    <h5 class="project-title">Project 1: NYC Taxi Trip Duration</h5>
+                    <div class="project-description">
+                    </div>
+                    <a href="https://github.com/vamshi12vamshi/nyc_taxi_trip/" class="project-btn">Github</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="details-container color-container">
+                <div class="project-box">
+                  <img src="./IMDb.jpg" alt="Project 2" class="project-img">
+                  <div class="project-info">
+                    <h5 class="project-title">Project 2: IMBD Sqllite Analysis</h5>
+                    <div class="project-description">
+                    </div>
+                    <a href="https://github.com/vamshi12vamshi/project-/" class="project-btn">Github</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="details-container color-container" style="align-self: center;"> <div class="project-box">
+                  <img src="./imagesport.jpg" alt="Project 2" class="project-img">
+                  <div class="project-info">
+                    <h5 class="project-title">Project 3: Forecasting Smart Watch<br> Price Prediction</h5>
+                    <div class="project-description">
+                    </div>
+                    <a href="https://github.com/smartinternz02/SI-GuidedProject-589989-1697101492" class="project-btn">Github</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="details-container color-container" style="align-self: center;"> <div class="project-box">
+                <img src="./restraunt order.jpg" alt="Project 2" class="project-img">
+                <div class="project-info">
+                  <h5 class="project-title">Project 4: Restaurant Order Analysis</h5>
+                  <div class="project-description">
+                  </div>
+                  <a href="https://github.com/vamshi12vamshi/restraurant-order-analysis" class="project-btn">Github</a>
+                </div>
+              </div>
+            </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+      <style>
+        #section-projects {
+          text-align: 10%; /* Center the "Projects" heading */
+        }
+        
+        .project-cards {
+          display: flex; /* Arrange projects side-by-side */
+          flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+          justify-content: center; /* Start projects from the left */
+         /* Set the number of projects per row (3 in this case) */
+          flex-flow: row wrap;
+          place-content: start space-evenly; /* Distribute equally and center */
+          gap: 40px /* Add spacing between projects */
+        }
+        
+        .project-box {
+          border: 1px solid #000000; /* Add border with desired color and thickness */
+          padding: 10px; /* Add padding inside the box */
+          border-radius: 10px; /* Add rounded corners for a box-like appearance */
+          width: 400px; /* Adjust width to fit three projects per line */ 
+          /*margin-right: 10%; /* Add margin to the right of each project box */
+          /*margin-bottom: 10%; /* Add margin to the bottom of each project box */
+          height:400px;
+        }
+        
+        /*.project-box:nth-child(3n) {
+          margin-right: 10%; /* Remove margin from the last project in each row 
+        }*/
+        
+        .project-img {
+          width: 100%; /* Display image full width within the box */
+          height: 200px; /* Adjust height as needed */
+          object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+        }
+        
+        .project-info {
+          text-align: center; /* Center title and description within each project */
+          /* Additional styles for clarity and structure, adjust as desired */
+          color: #0c0c0c; /* Set text color */
+          font-family: sans-serif; /* Set font family */
+          margin: 0 10px; /* Add horizontal margin for spacing */
+        }
+        
+        .project-title {
+          margin-top: 10%; /* Add spacing between image and title */
+        }
+        
+        .project-btn {
+          background-color: #0e0f0e; /* Color for the Github button */
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none; /* Remove underline from the link */
+          display: inline-block; /* Display as a block-level element */
+          border: none; /* Remove border from the button */
+          border-radius: 5px; /* Add rounded corners */
+          cursor: pointer; /* Change cursor to a pointer on hover */
+          font-size: 12px; /* Adjust font size */
+        }
+        
+        .project-btn:hover {
+          background-color:silver;
+        }
+        
+      </style>  
+      
+      
+        <br>
+        <br>
+        <br>
+        <br>
+
+       
+          
+
+        <style>
+          /* Center the heading */
+          h1 {
+            text-align: center;
+          }
+        
+          /* Change cursor to pointer for card images */
+          .card-img-top {
+            cursor: pointer;
+          }
+        
+          /* Styling for modal */
+          .modal-dialog {
+            max-width: 100%; /* Ensure modal dialog takes up full width */
+            margin: 0; /* Reset margin */
+          }
+        
+          .modal-content {
+            background-color: transparent; /* Set modal content background color to transparent */
+            border: rgb(8, 8, 8); /* Add border with RGB color */
+          }
+        
+          /* Styling for modal body images */
+          .modal-body img {
+            max-width: 0%; /* Set initial width of images to 0% */
+            height: 0%; /* Set initial height of images to 0% */
+          }
+        
+          /* Styling for certificate container */
+          .certificate-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center align items horizontally */
+            align-items: center; /* Center align items vertically */
+            flex-wrap: wrap; /* Allow items to wrap to next line */
+            gap: 2%; /* Set gap between items */
+          }
+        
+          /* Styling for individual certificate wrappers */
+          .certificate-wrapper {
+            text-align: center; /* Center align text within wrapper */
+            margin: 0px; /* Reset margin */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: transform 0.3s ease; /* Add smooth transition effect */
+            flex: 1 0 25%; /* Adjust flex properties for responsive layout */
+            max-width: calc(25% - 10px); /* Set maximum width of each certificate */
+            border: 1px solid #0b0b0b; /* Add border with desired color */
+            padding: 5px; /* Add padding inside the box */
+            border-radius: 10px; /* Add rounded corners */
+          }
+        
+          /* Hover effect for certificate wrappers */
+          .certificate-wrapper:hover {
+            transform: scale(1.05); /* Scale up on hover */
+          }
+        
+          /* Styling for certificate images */
+          .certificate-img {
+            width: 80%; /* Ensure images occupy 80% of their container width */
+            height: 80%; /* Ensure images occupy 80% of their container height */
+          }
+        
+          /* Styling for certificate names */
+          .certificate-name {
+            margin-top: 5px; /* Add space above certificate names */
+            font-size: 20px; /* Set font size for certificate names */
+          }
+        
+          /* Styling for modal */
+          .modal {
+            display: none; /* Hide modal by default */
+            position: fixed; /* Positioning relative to the browser window */
+            z-index: 1; /* Set z-index to ensure modal appears on top of other content */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Allow scrolling when modal content exceeds viewport height */
+            background-color: rgb(0,0,0); /* Fallback color for older browsers */
+            background-color: rgba(0,0,0,0.9); /* Set modal background color with transparency */
+          }
+        
+          /* Styling for modal content */
+          .modal-content {
+            margin: auto; /* Center modal content horizontally */
+            display: block; /* Display as block element */
+            width: 80%; /* Set width of modal content */
+            max-width: 800px; /* Set maximum width of modal content */
+          }
+        
+          /* Styling for certificate modal images */
+          .certificate-modal {
+            width: 100%; /* Set width of modal images to 100% */
+            height: auto; /* Set height of modal images to auto */
+          }
+        
+          /* Styling for close button */
+          .close {
+            color: #131212; /* Set color of close button */
+            position: absolute; /* Positioning relative to the modal content */
+            top: 10px; /* Set distance from top */
+            right: 25px; /* Set distance from right */
+            font-size: 35px; /* Set font size of close button */
+            font-weight: bold; /* Set font weight of close button */
+            transition: 0.3s; /* Add transition effect */
+          }
+        
+          /* Hover/focus effect for close button */
+          .close:hover,
+          .close:focus {
+            color: #bbb; /* Change color on hover/focus */
+            text-decoration: none; /* Remove default underline */
+            cursor: pointer; /* Change cursor to pointer */
+          }
+        </style>
+        
+</head>
+<body>
+
+  <section id="Award & Certificates" class="section">  
+
+    <h1 class="title"><b>Award & Certificates</b></h1> <div class="experience-details-container">
+<div class="certificate-container">
+  <div class="certificate-wrapper" onclick="openModal('externsip.jpg', 'Artificial Intelligence and Machine Learning Powered by Google Developers')">
+    <img src="externsip.jpg" class="certificate-img" alt="Certificate 1">
+    <div class="certificate-name"><h6>Artificial Intelligence and Machine Learning <br>Powered by Google Developers</h6></div>
+  </div>
+  <br>
+<br>
+  <div class="certificate-wrapper" onclick="openModal('kpmg virtual.jpg', 'KPMG Data Analytics Consulting Virtual Internship')">
+    <img src="kpmg virtual.jpg" class="certificate-img" alt="Certificate 2">
+    <div class="certificate-name"><h6>KPMG Data Analytics Consulting <br>Virtual Internship</h6></div>
+  </div>
+  
+  <div class="certificate-wrapper" onclick="openModal('maven chatgpt.png', 'Chat GPT For Data Analytics by maven analytics')">
+    <img src="maven chatgpt.png" class="certificate-img" alt="Certificate 3">
+    <div class="certificate-name"><h6>Chat GPT For Data Analytics by maven analytics</h6></div>
+  </div>
+  
+  <div class="certificate-wrapper" onclick="openModal('sql.png', 'HackerRank SQL Intermediate Certificate')">
+    <img src="sql.png" class="certificate-img" alt="Certificate 4">
+    <div class="certificate-name"><h6>HackerRank SQL Intermediate Certificate</h6></div>
+  </div>
+  
+  <div class="certificate-wrapper" onclick="openModal('workshop.png', 'Three days Workshop Visualization Using Power BI')">
+    <img src="workshop.png" class="certificate-img" alt="Certificate 5">
+    <div class="certificate-name"><h6>Three days Workshop on <br>Visualization Using Power BI</h6></div>
+  </div>
+  <!-- Add more certificate images and names as needed -->
+</div>
+
+<div id="certificateModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content certificate-modal" id="modalImage">
+</div>
+
+<script>
+function openModal(imageSrc, certificateName) {
+  var modal = document.getElementById("certificateModal");
+  var modalImg = document.getElementById("modalImage");
+  var certificateNameElement = document.getElementById("certificateName");
+  modal.style.display = "block";
+  modalImg.src = imageSrc;
+  certificateNameElement.innerText = certificateName;
+}
+
+function closeModal() {
+  var modal = document.getElementById("certificateModal");
+  modal.style.display = "none";
+}
+</script>
+</body>
+
+
+<style>
+  /* CSS styles */
+
+  /* Resets margin and padding for the entire document */
+  body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif; /* Sets default font family */
+  }
+
+  /* Styles for the contact section */
+  .contact-section {
+      text-align: center; /* Aligns text within the contact section to the center */
+  }
+
+  /* Styles for the container holding the contact information */
+  .contact-container {
+      margin: 0 auto; /* Centers the container horizontally */
+      width: 80%; /* Sets the width of the container to 80% of the viewport width */
+      max-width: 800px; /* Sets the maximum width of the container to 800 pixels */
+  }
+
+  /* Styles for the title of the contact section */
+  .contact-title {
+      font-size: 50px; /* Sets the font size of the title to 50 pixels */
+      margin-bottom: 50px; /* Adds space below the title */
+      text-align: center; /* Aligns the title text to the center */
+  }
+
+  /* Styles for the container holding the contact information */
+  .contact-info-container {
+      display: flex; /* Displays the contact information in a flex layout */
+      flex-wrap: wrap; /* Allows contact information to wrap to multiple lines if needed */
+      justify-content: center; /* Aligns contact information horizontally to the center */
+      text-align: center; /* Aligns contact information horizontally to the center */
+  }
+
+  /* Styles for each individual contact information block */
+  .contact-info {
+      width: calc(25% - 20px); /* Sets the width of each contact information block to 25% of the container width minus 20 pixels (for margins) */
+      margin: 10px; /* Adds space around each contact information block */
+      display: inline-block; /* Allows contact information blocks to display inline */
+      padding: 10px; /* Adds padding inside each contact information block */
+      border: 2px solid #000; /* Adds a border around each contact information block */
+      border-radius: 5px; /* Adds rounded corners to each contact information block */
+      text-align: center; /* Aligns text within each contact information block to the center */
+  }
+
+  /* Styles for the icons within contact information blocks */
+  .icon {
+      width: 50px; /* Sets the width of icons to 50 pixels */
+      height: 50px; /* Sets the height of icons to 50 pixels */
+  }
+
+  /* Styles for specific icons (e.g., email icon) if needed */
+  .email-icon {
+      /* Add specific styles for email icon if needed */
+  }
+
+  /* Styles for the footer section */
+  .footer {
+      text-align: center; /* Aligns text within the footer section to the center */
+      margin-top: 50px; /* Adds space above the footer */
+  }
+
+  /* Styles for the navigation within the footer */
+
+</style>
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+                <section id="Contact Me" class="section">
+            <h2 class="contact-title"><b><h1>Contact Me</b></h1></h2>
+            <div class="contact-container">
+                <div class="contact-info-container">
+                  <div class="contact-info">
+                    <img src="./email.png" alt="Email icon" class="icon email-icon">
+                    <p><a href="mailto:vamshivenuvanka0604@g...">vamshivenuvanka0604@g...</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./github.png" alt="GitHub icon" class="icon">
+                    <p><a href="https://github.com/vamshi12vamshi">GitHub</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./linkedin.png" alt="LinkedIn icon" class="icon">
+                    <p><a href="https://www.linkedin.com/in/vamshi-venuvanka-b21aa2202/">LinkedIn</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./contacts.png" alt="Phone icon" class="icon">
+                    <p><a href="tel:+91 7396278182">+91 7396278182</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-copyright">Copyright &#169; 2024 Venuvanka vamshi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

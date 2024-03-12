@@ -1,0 +1,111 @@
+.first{
+    background-color: yellow;
+}
+.sec{
+    background-color: rgb(18, 18, 19);
+margin-left: 24
+0px;
+}
+.third{
+    background-color: pink;
+}
+.first{
+    height: auto;
+    width: auto;
+   padding: 20px;
+   /* grid-template-rows: 1fr 1fr;
+   grid-template-columns: 200px 200px; */
+   
+
+
+   
+
+}
+.container{
+    display: flex;
+gap: 10px;
+flex-shrink: 0;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 200px 200px;
+
+}
+.container2{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.container2 > p{
+    background-color: yellow;
+}
+
+/* Leader dots section */
+.section::after {
+  content: "..."; /* Replace "..." with your desired dots */
+  display: inline-block;
+  width: 50%; /* Adjust width as needed */
+  text-align: right; /* Place dots at the right end */
+}
+
+/* Leader dots section */
+.section::after {
+  content: "..."; /* Replace "..." with your desired dots */
+  display: inline-block; /* Displays the dots inline with the content */
+  width: 0%; /* Adjust the width of the dots container */
+  text-align: right; /* Aligns the dots to the right end */
+}
+
+/* Contact section */
+.contact-section {
+  display: flex; /* Arranges elements in a row */
+  justify-content: center; /* Aligns elements horizontally in the center */
+  align-items: center; /* Aligns elements vertically in the center */
+  min-height: 70vh; /* Sets the minimum height of the section to 70% of the viewport height */
+  background-color: #120101; /* Sets the background color of the section */
+  padding: 2rem; /* Adds padding around the content inside the section */
+}
+
+.contact-container {
+  text-align: start; /* Aligns text within the container to the center */
+}
+
+.contact-title {
+  margin-bottom: 2rem; /* Adds space below the title */
+  font-size: 2rem; /* Sets the font size of the title */
+}
+
+.contact-info-container {
+  display: flex; /* Arranges elements inside the container in a row */
+  flex-wrap: wrap; /* Allows elements to wrap to multiple lines if needed */
+  justify-content: space-around; /* Distributes elements evenly with space between them */
+  gap: 2rem; /* Adds space between elements */
+}
+
+.contact-info {
+  display: flex; /* Arranges icon and text inside the block side-by-side */
+  align-items: center; /* Vertically aligns icon and text at the center */
+  text-align: start;; /* Aligns text within the block to the center */
+  width: 50%; /* Sets the width of each contact information block */
+}
+
+.contact-info img {
+  margin-bottom: 1rem; /* Adds space below the icon */
+  height: 300px; /* Sets the height of the icon */
+  width: 300px; /* Sets the width of the icon */
+}
+
+.contact-info p {
+  font-size: 16px; /* Sets the font size of the text */
+  margin-bottom: 0; /* Removes space below the text */
+}
+
+/* Footer section */
+footer {
+  text-align: center; /* Aligns text within the footer to the center */
+  padding: 1rem; /* Adds padding around the content inside the footer */
+  background-color: #ddd; /* Sets the background color of the footer */
+}
+
+.footer-copyright {
+  font-size: 14px; /* Sets the font size of the copyright text */
+}
